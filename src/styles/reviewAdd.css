@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column; /* ✅ 장르별 세로 정렬 */
+  align-items: center; /* ✅ 가운데 정렬 유지 */
+  min-height: 100vh;
+  padding: 10px;
+  background-color: rgb(56, 53, 53);
+  gap: 10px; /* ✅ 장르별 간격 추가 */
+}

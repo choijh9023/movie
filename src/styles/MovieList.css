@@ -1,0 +1,30 @@
+/* 장르별 제목 스타일 */
+.movie-list h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center; /* ✅ 가운데 정렬 유지 */
+}
+
+/* 영화 카드 컨테이너 (한 줄 이상 자동 정렬) */
+.movie-container {
+  display: flex;
+  flex-wrap: wrap; /* ✅ 자동 줄바꿈 적용 */
+  justify-content: center; /* ✅ 가운데 정렬 유지 */
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+/* 스크롤 제거 또는 조정 */
+.movie-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.movie-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.movie-container::-webkit-scrollbar-track {
+  background: #eee;
+}

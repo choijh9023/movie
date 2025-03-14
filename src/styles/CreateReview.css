@@ -1,0 +1,135 @@
+.review-textarea-container {
+  width: 100%;
+}
+
+.review-textarea-container textarea {
+  width: 100%;
+  height: 130px;
+  background-color: #404040;
+  color: white;
+  border: none;
+  resize: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 별점과 버튼을 감싸는 컨테이너 */
+.review-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+/* 별점 버튼 스타일 */
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.rating-label {
+  color: yellow;
+  font-size: 20px;
+}
+
+.rating-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.rating-buttons button {
+  width: 40px;
+  height: 40px;
+  background-color: #404040;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rating-buttons button.active {
+  background-color: #666666;
+}
+
+.review-submit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.submit-button,
+.back-button,
+.confirm-button {
+  background-color: #666666;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  width: 80px;
+}
+
+.submit-button:hover,
+.back-button:hover,
+.confirm-button:hover {
+  background-color: #777777;
+}
+
+/* AI 분석 결과 스타일 */
+.ai-analysis-result {
+  background-color: #404040;
+  padding: 20px;
+  border-radius: 4px;
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.ai-analysis-result h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+}
+
+.ai-analysis-result div {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* 로딩 스피너 관련 스타일 */
+.analyzing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #666666;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.analyzing-container p {
+  color: #999;
+  margin: 0;
+  font-size: 14px;
+}

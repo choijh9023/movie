@@ -1,0 +1,17 @@
+/* 홈 컨테이너를 세로 정렬 (가운데 정렬 유지) */
+.home {
+  display: flex;
+  flex-direction: column; /* ✅ 장르별 세로 정렬 */
+  align-items: center; /* ✅ 가운데 정렬 유지 */
+  min-height: 100vh;
+  padding: 10px;
+  background-color: rgb(56, 53, 53);
+  gap: 10px; /* ✅ 장르별 간격 추가 */
+}
+
+/* 각 장르별 영화 리스트 */
+.movie-list {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center; /* ✅ 제목 가운데 정렬 */
+}
